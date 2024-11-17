@@ -70,4 +70,7 @@ function mealRecipeModal(meal){
     `;
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe')
+    recipeCloseBtn.addEventListener('click', () => {
+      mealDetailsContent.parentElement.classList.remove('showRecipe')
+    })
 }
